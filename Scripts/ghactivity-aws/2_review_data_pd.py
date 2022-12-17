@@ -1,9 +1,11 @@
 import pandas as pd
 
 
-path_ghaactivity_aws = r'C:\Users\admin\OneDrive\Documents\Git\Udemy\AWS\AWS_Lambda\Personal_code\ghactivity-aws\data\2022-06-05-0.json.gz'
+path_ghactivity_aws = r'C:\Users\lmman\Documents\GIT\AWS\Lambda\training-aws-lambda-ghactivity\Scripts\ghactivity-aws\data\2022-06-05-0.json.gz'
 
-df = pd.read_json(path_ghaactivity_aws, lines = True)
+df = pd.read_json(path_ghactivity_aws, lines = True)
+
+df[0:10]
 
 df.shape
 
